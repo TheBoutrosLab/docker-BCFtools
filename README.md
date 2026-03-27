@@ -1,7 +1,7 @@
 # docker-BCFtools
 Dockerfile for BCFtools, a "program for variant calling and manipulating files in the Variant Call Format (VCF) and its binary counterpart BCF"<sup>1</sup>.
 
-The image is located in the UCLAHS-CDS GitHub container registry: https://github.com/theboutroslab/docker-BCFtools/pkgs/container/bcftools
+The image is located in the TheBoutrosLab GitHub container registry: https://github.com/theboutroslab/docker-BCFtools/pkgs/container/bcftools
 
 # Documentation
 BCFtools main website [here](https://samtools.github.io/bcftools/howtos/index.html)
