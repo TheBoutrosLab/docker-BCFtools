@@ -2,16 +2,18 @@ ARG MINIFORGE_VERSION=26.1.1-2
 
 FROM condaforge/miniforge3:${MINIFORGE_VERSION} AS builder
 
-# Use mamba to install tools and dependencies into /usr/local
+# Use mamba to install tools into the existing Miniforge base environment
 ARG BCFTOOLS_VERSION=1.23
-RUN mamba create -qy -p /usr/local \
+RUN mamba install -qy -n base \
     -c bioconda \
     -c conda-forge \
-    bcftools==${BCFTOOLS_VERSION}
+    bcftools==${BCFTOOLS_VERSION} && \
+    mamba clean -afy
 
 # Deploy the target tools into a base image
 FROM ubuntu:25.04
-COPY --from=builder /usr/local /usr/local
+COPY --from=builder /opt/conda /opt/conda
+ENV PATH=/opt/conda/bin:${PATH}
 
 # Add a new user/group called bldocker
 RUN groupadd -g 500001 bldocker && \
