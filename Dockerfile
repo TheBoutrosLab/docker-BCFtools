@@ -3,7 +3,7 @@ ARG MINIFORGE_VERSION=26.1.1-2
 FROM condaforge/miniforge3:${MINIFORGE_VERSION} AS builder
 
 # Use mamba to install tools into the existing Miniforge base environment
-ARG BCFTOOLS_VERSION=1.23
+ARG BCFTOOLS_VERSION=1.23.1
 RUN mamba install -qy -n base \
     -c bioconda \
     -c conda-forge \
