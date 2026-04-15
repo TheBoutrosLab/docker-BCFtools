@@ -11,7 +11,7 @@ RUN mamba install -qy -n base \
     mamba clean -afy
 
 # Deploy the target tools into a base image
-FROM ubuntu:25.04
+FROM ubuntu:24.04
 COPY --from=builder /opt/conda /opt/conda
 ENV PATH=/opt/conda/bin:${PATH}
 
@@ -22,5 +22,5 @@ RUN groupadd -g 500001 bldocker && \
 # Change the default user to bldocker from root
 USER bldocker
 
-LABEL maintainer="Mohammed Faizal Eeman Mootor <mmootor@mednet.ucla.edu>" \
-      org.opencontainers.image.source=https://github.com/uclahs-cds/docker-BCFtools
+LABEL maintainer="Rupert Hugh-White <rhughwhite@sbpdiscovery.org>" \
+      org.opencontainers.image.source=https://github.com/TheBoutrosLab/docker-BCFtools

@@ -1,7 +1,7 @@
 ---
 Category: 'docker'
 Description: 'Docker repository for BCFtools'
-Maintainers: ['mmootor@mednet.ucla.edu']
+Maintainers: ['rhughwhite@sbpdiscovery.org']
 Contributors: ['Timothy Sanders', 'Mohammed Faizal Eeman Mootor', 'John Sahrmann', 'Sorel Fitz-Gibbon']
 Languages: ['Dockerfile']
 Tools: ['BCFtools']
