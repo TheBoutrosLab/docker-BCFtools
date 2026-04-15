@@ -13,9 +13,9 @@ RUN mamba create -qy -p ${BCFTOOLS_ENV} \
 
 # Deploy the target tools into a base image
 FROM ubuntu:24.04
-RUN mkdir -p /opt/conda/envs
-COPY --from=builder /opt/conda/envs/bcftools /opt/conda/envs/bcftools
-ENV PATH=/opt/conda/envs/bcftools/bin:${PATH}
+ARG BCFTOOLS_ENV=/opt/conda/envs/bcftools
+COPY --from=builder ${BCFTOOLS_ENV} ${BCFTOOLS_ENV}
+ENV PATH=${BCFTOOLS_ENV}/bin:${PATH}
 
 # Add a new user/group called bldocker
 RUN groupadd -g 500001 bldocker && \
