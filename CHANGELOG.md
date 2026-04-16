@@ -8,6 +8,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ---
 
 ## [Unreleased]
+
+## [1.23.1] - 2026-04-16
 - Update BCFtools from 1.22 to 1.23.1
 - Update Ubuntu base image 23.04 to 24.04
 - Switch the builder image from Mambaforge to Miniforge3 and update it from 24.7.1-2 to 26.1.1-2
