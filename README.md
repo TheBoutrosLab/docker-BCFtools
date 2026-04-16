@@ -13,7 +13,7 @@ GitHub repository [here](http://github.com/samtools/bcftools).
 # Version
 | Tool | Version |
 |------|---------|
-| BCFtools | 1.22 |
+| BCFtools | 1.23.1 |
 
 
 ---
