@@ -4,7 +4,7 @@ ARG BCFTOOLS_ENV=/opt/conda/envs/bcftools
 FROM condaforge/miniforge3:${MINIFORGE_VERSION} AS builder
 
 # Install BCFtools into an isolated Conda environment instead of mutating base
-ARG BCFTOOLS_VERSION=1.23.1
+ARG BCFTOOLS_VERSION=1.24
 ARG BCFTOOLS_ENV
 RUN mamba create -qy -p ${BCFTOOLS_ENV} \
     -c bioconda \

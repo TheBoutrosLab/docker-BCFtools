@@ -5,7 +5,7 @@ Maintainers: ['rhughwhite@sbpdiscovery.org']
 Contributors: ['Timothy Sanders', 'Mohammed Faizal Eeman Mootor', 'John Sahrmann', 'Sorel Fitz-Gibbon']
 Languages: ['Dockerfile']
 Tools: ['BCFtools']
-Version: ['1.23.1']
+Version: ['1.24']
 Purpose of tool: 'BCFtools is a program for variant calling and manipulating files in the Variant Call Format (VCF) and its binary counterpart BCF.'
 References: 'https://samtools.github.io/bcftools/howtos/publications.html'
 image_name: 'bcftools'
