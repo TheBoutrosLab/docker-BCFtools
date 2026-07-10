@@ -9,6 +9,9 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [1.24] - 2026-07-10
+- Update BCFtools from 1.23.1 to 1.24
+
 ## [1.23.1] - 2026-04-16
 - Update BCFtools from 1.22 to 1.23.1
 - Update Ubuntu base image 23.04 to 24.04
